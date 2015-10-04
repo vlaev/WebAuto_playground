@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Custom suite" duration-ms="23348" started-at="2015-10-03T13:51:37Z" finished-at="2015-10-03T13:52:01Z">
+    <groups>
+    </groups>
+    <test name="WebAuto_playground" duration-ms="23348" started-at="2015-10-03T13:51:37Z" finished-at="2015-10-03T13:52:01Z">
+      <class name="com.selenuim.vlay.Web_Test">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.selenuim.vlay.Web_Test@283dc831]" name="setUp" is-config="true" duration-ms="6544" started-at="2015-10-03T16:51:37Z" finished-at="2015-10-03T16:51:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCreateUser()[pri:0, instance:com.selenuim.vlay.Web_Test@283dc831]" name="testCreateUser" duration-ms="7007" started-at="2015-10-03T16:51:44Z" finished-at="2015-10-03T16:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUser -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.selenuim.vlay.Web_Test@283dc831]" name="takeScreenShotOnFailure" is-config="true" duration-ms="1" started-at="2015-10-03T16:51:51Z" finished-at="2015-10-03T16:51:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateUser status=SUCCESS method=Web_Test.testCreateUser()[pri:0, instance:com.selenuim.vlay.Web_Test@283dc831] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="testDeleteUser()[pri:0, instance:com.selenuim.vlay.Web_Test@283dc831]" name="testDeleteUser" duration-ms="9350" started-at="2015-10-03T16:51:51Z" finished-at="2015-10-03T16:52:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUser -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.selenuim.vlay.Web_Test@283dc831]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2015-10-03T16:52:00Z" finished-at="2015-10-03T16:52:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDeleteUser status=SUCCESS method=Web_Test.testDeleteUser()[pri:0, instance:com.selenuim.vlay.Web_Test@283dc831] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.selenuim.vlay.Web_Test@283dc831]" name="tearDown" is-config="true" duration-ms="435" started-at="2015-10-03T16:52:00Z" finished-at="2015-10-03T16:52:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.selenuim.vlay.Web_Test -->
+    </test> <!-- WebAuto_playground -->
+  </suite> <!-- Custom suite -->
+</testng-results>

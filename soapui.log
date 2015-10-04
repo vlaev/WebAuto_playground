@@ -1,0 +1,17 @@
+2015-10-03 22:01:19,103 WARN  [SoapUI] Missing folder [E:\Java_test\WebAuto_playground\.\ext] for external libraries
+2015-10-03 22:01:19,299 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\Vlay\soapui-settings.xml]
+2015-10-03 22:01:19,886 INFO  [WsdlProject] Loaded project from [file:/E:/Java_test/WebAuto_playground/src/test/soapUI/vlay-pythonanywhere-soapui-project.xml]
+2015-10-03 22:01:19,886 WARN  [WsdlProject] Project 'vlay.pythonanywhere' is from a newer version (5.0.0) of soapUI than this (4.5.0) and parts of it may be incompatible or incorrect. Saving this project with this version of soapUI may cause it to function differently.
+2015-10-03 22:01:20,163 INFO  [SoapUITestCaseRunner] Running soapUI tests in project [vlay.pythonanywhere]
+2015-10-03 22:01:20,165 INFO  [SoapUITestCaseRunner] Running Project [vlay.pythonanywhere], runType = SEQUENTIAL
+2015-10-03 22:01:20,177 INFO  [SoapUITestCaseRunner] Running soapUI testcase [AddingNumbers]
+2015-10-03 22:01:20,186 INFO  [SoapUITestCaseRunner] running step [RequestAdd]
+2015-10-03 22:01:22,473 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2015-10-03 22:01:22,474 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-10-03 22:01:22,474 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [AddingNumbers], time taken: 2278ms, status: FINISHED
+2015-10-03 22:01:22,474 INFO  [SoapUITestCaseRunner] Running soapUI testcase [AddingStrings]
+2015-10-03 22:01:22,475 INFO  [SoapUITestCaseRunner] running step [requestAddStrings]
+2015-10-03 22:01:22,945 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+2015-10-03 22:01:22,945 INFO  [SoapUITestCaseRunner] Assertion [Contains] has status VALID
+2015-10-03 22:01:22,946 INFO  [SoapUITestCaseRunner] Finished running soapUI testcase [AddingStrings], time taken: 470ms, status: FINISHED
+2015-10-03 22:01:22,946 INFO  [SoapUITestCaseRunner] Project [vlay.pythonanywhere] finished with status [FINISHED] in 2777ms

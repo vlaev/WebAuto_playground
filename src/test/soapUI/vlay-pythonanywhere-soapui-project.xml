@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="vlay.pythonanywhere" resourceRoot="" soapui-version="5.0.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="Selenium TestingBinding" type="wsdl" bindingName="{https://vlay.pythonanywhere.com/ajax_release/default/call/soap}Selenium TestingBinding" soapVersion="1_1" anonymous="optional" definition="https://vlay.pythonanywhere.com/ajax_release/default/call/soap?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://vlay.pythonanywhere.com/ajax_release/default/call/soap?WSDL"><con:part><con:url>https://vlay.pythonanywhere.com/ajax_release/default/call/soap?WSDL</con:url><con:content><![CDATA[<wsdl:definitions name="Selenium Testing" targetNamespace="https://vlay.pythonanywhere.com/ajax_release/default/call/soap" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="https://vlay.pythonanywhere.com/ajax_release/default/call/soap" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation/>
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="https://vlay.pythonanywhere.com/ajax_release/default/call/soap">
+      <xsd:element name="CalculateROI">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="verion_number" type="xsd:int"/>
+            <xsd:element name="auto_learning_tool_time" type="xsd:int"/>
+            <xsd:element name="auto_analize_and_maintenance_time" type="xsd:int"/>
+            <xsd:element name="auto_reorganization_time" type="xsd:int"/>
+            <xsd:element name="number_of_features" type="xsd:int"/>
+            <xsd:element name="man_one_feature_complete_time" type="xsd:int"/>
+            <xsd:element name="auto_one_feature_automatization" type="xsd:int"/>
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CalculateROIResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="roi" type="xsd:float"/>
+            <xsd:element name="Verdict" type="xsd:boolean"/>
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetUsersPostsCount">
+        <xsd:complexType/>
+      </xsd:element>
+      <xsd:element name="GetUsersPostsCountResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="UserPostsNumber" type="xsd:string"/>
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AddIntegers">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="a" type="xsd:int"/>
+            <xsd:element name="b" type="xsd:int"/>
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AddIntegersResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="AddResult" type="xsd:int"/>
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetNumberOfVotesByPost">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="post_id" type="xsd:int"/>
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetNumberOfVotesByPostResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="AmountVotesNumber" type="xsd:int"/>
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AddStrings">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="a" type="xsd:string"/>
+            <xsd:element name="b" type="xsd:string"/>
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="AddStringsResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="AddResult" type="xsd:string"/>
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetServerTime">
+        <xsd:complexType/>
+      </xsd:element>
+      <xsd:element name="GetServerTimeResponse">
+        <xsd:complexType>
+          <xsd:all>
+            <xsd:element name="Time" type="xsd:string"/>
+          </xsd:all>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CalculateROIInput">
+    <wsdl:part element="tns:CalculateROI" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="CalculateROIOutput">
+    <wsdl:part element="tns:CalculateROIResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetUsersPostsCountInput">
+    <wsdl:part element="tns:GetUsersPostsCount" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetUsersPostsCountOutput">
+    <wsdl:part element="tns:GetUsersPostsCountResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AddIntegersInput">
+    <wsdl:part element="tns:AddIntegers" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AddIntegersOutput">
+    <wsdl:part element="tns:AddIntegersResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetNumberOfVotesByPostInput">
+    <wsdl:part element="tns:GetNumberOfVotesByPost" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetNumberOfVotesByPostOutput">
+    <wsdl:part element="tns:GetNumberOfVotesByPostResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AddStringsInput">
+    <wsdl:part element="tns:AddStrings" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="AddStringsOutput">
+    <wsdl:part element="tns:AddStringsResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetServerTimeInput">
+    <wsdl:part element="tns:GetServerTime" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="GetServerTimeOutput">
+    <wsdl:part element="tns:GetServerTimeResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="Selenium TestingPortType">
+    <wsdl:operation name="CalculateROI">
+      <wsdl:documentation>Calculate ROI of testing</wsdl:documentation>
+      <wsdl:input message="tns:CalculateROIInput"/>
+      <wsdl:output message="tns:CalculateROIOutput"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersPostsCount">
+      <wsdl:documentation>Get auth user posts count</wsdl:documentation>
+      <wsdl:input message="tns:GetUsersPostsCountInput"/>
+      <wsdl:output message="tns:GetUsersPostsCountOutput"/>
+    </wsdl:operation>
+    <wsdl:operation name="AddIntegers">
+      <wsdl:documentation>Add two values</wsdl:documentation>
+      <wsdl:input message="tns:AddIntegersInput"/>
+      <wsdl:output message="tns:AddIntegersOutput"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetNumberOfVotesByPost">
+      <wsdl:documentation>Count number of vote for post</wsdl:documentation>
+      <wsdl:input message="tns:GetNumberOfVotesByPostInput"/>
+      <wsdl:output message="tns:GetNumberOfVotesByPostOutput"/>
+    </wsdl:operation>
+    <wsdl:operation name="AddStrings">
+      <wsdl:documentation>Add two values</wsdl:documentation>
+      <wsdl:input message="tns:AddStringsInput"/>
+      <wsdl:output message="tns:AddStringsOutput"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <wsdl:documentation>Returns time of server</wsdl:documentation>
+      <wsdl:input message="tns:GetServerTimeInput"/>
+      <wsdl:output message="tns:GetServerTimeOutput"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Selenium TestingBinding" type="tns:Selenium TestingPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="CalculateROI">
+      <soap:operation soapAction="https://vlay.pythonanywhere.com/ajax_release/default/call/soapCalculateROI" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUsersPostsCount">
+      <soap:operation soapAction="https://vlay.pythonanywhere.com/ajax_release/default/call/soapGetUsersPostsCount" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddIntegers">
+      <soap:operation soapAction="https://vlay.pythonanywhere.com/ajax_release/default/call/soapAddIntegers" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNumberOfVotesByPost">
+      <soap:operation soapAction="https://vlay.pythonanywhere.com/ajax_release/default/call/soapGetNumberOfVotesByPost" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddStrings">
+      <soap:operation soapAction="https://vlay.pythonanywhere.com/ajax_release/default/call/soapAddStrings" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <soap:operation soapAction="https://vlay.pythonanywhere.com/ajax_release/default/call/soapGetServerTime" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Selenium TestingService">
+    <wsdl:documentation/>
+    <wsdl:port binding="tns:Selenium TestingBinding" name="Selenium Testing">
+      <soap:address location="https://vlay.pythonanywhere.com/ajax_release/default/call/soap"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://vlay.pythonanywhere.com/ajax_release/default/call/soap</con:endpoint></con:endpoints><con:operation isOneWay="false" action="https://vlay.pythonanywhere.com/ajax_release/default/call/soapAddIntegers" name="AddIntegers" bindingOperationName="AddIntegers" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vlay.pythonanywhere.com/ajax_release/default/call/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="https://vlay.pythonanywhere.com/ajax_release/default/call/soap">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:AddIntegers>
+         <!--You may enter the following 2 items in any order-->
+         <soap:a>?</soap:a>
+         <soap:b>?</soap:b>
+      </soap:AddIntegers>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://vlay.pythonanywhere.com/ajax_release/default/call/soapAddIntegers"/></con:call></con:operation><con:operation isOneWay="false" action="https://vlay.pythonanywhere.com/ajax_release/default/call/soapAddStrings" name="AddStrings" bindingOperationName="AddStrings" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vlay.pythonanywhere.com/ajax_release/default/call/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="https://vlay.pythonanywhere.com/ajax_release/default/call/soap">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:AddStrings>
+         <!--You may enter the following 2 items in any order-->
+         <soap:a>?</soap:a>
+         <soap:b>?</soap:b>
+      </soap:AddStrings>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://vlay.pythonanywhere.com/ajax_release/default/call/soapAddStrings"/></con:call></con:operation><con:operation isOneWay="false" action="https://vlay.pythonanywhere.com/ajax_release/default/call/soapCalculateROI" name="CalculateROI" bindingOperationName="CalculateROI" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vlay.pythonanywhere.com/ajax_release/default/call/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="https://vlay.pythonanywhere.com/ajax_release/default/call/soap">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:CalculateROI>
+         <!--You may enter the following 7 items in any order-->
+         <soap:verion_number>?</soap:verion_number>
+         <soap:auto_learning_tool_time>?</soap:auto_learning_tool_time>
+         <soap:auto_analize_and_maintenance_time>?</soap:auto_analize_and_maintenance_time>
+         <soap:auto_reorganization_time>?</soap:auto_reorganization_time>
+         <soap:number_of_features>?</soap:number_of_features>
+         <soap:man_one_feature_complete_time>?</soap:man_one_feature_complete_time>
+         <soap:auto_one_feature_automatization>?</soap:auto_one_feature_automatization>
+      </soap:CalculateROI>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://vlay.pythonanywhere.com/ajax_release/default/call/soapCalculateROI"/></con:call></con:operation><con:operation isOneWay="false" action="https://vlay.pythonanywhere.com/ajax_release/default/call/soapGetNumberOfVotesByPost" name="GetNumberOfVotesByPost" bindingOperationName="GetNumberOfVotesByPost" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vlay.pythonanywhere.com/ajax_release/default/call/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="https://vlay.pythonanywhere.com/ajax_release/default/call/soap">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:GetNumberOfVotesByPost>
+         <soap:post_id>?</soap:post_id>
+      </soap:GetNumberOfVotesByPost>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://vlay.pythonanywhere.com/ajax_release/default/call/soapGetNumberOfVotesByPost"/></con:call></con:operation><con:operation isOneWay="false" action="https://vlay.pythonanywhere.com/ajax_release/default/call/soapGetServerTime" name="GetServerTime" bindingOperationName="GetServerTime" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vlay.pythonanywhere.com/ajax_release/default/call/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="https://vlay.pythonanywhere.com/ajax_release/default/call/soap">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:GetServerTime/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://vlay.pythonanywhere.com/ajax_release/default/call/soapGetServerTime"/></con:call></con:operation><con:operation isOneWay="false" action="https://vlay.pythonanywhere.com/ajax_release/default/call/soapGetUsersPostsCount" name="GetUsersPostsCount" bindingOperationName="GetUsersPostsCount" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://vlay.pythonanywhere.com/ajax_release/default/call/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="https://vlay.pythonanywhere.com/ajax_release/default/call/soap">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:GetUsersPostsCount/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://vlay.pythonanywhere.com/ajax_release/default/call/soapGetUsersPostsCount"/></con:call></con:operation></con:interface><con:testSuite name="BasicOperations"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="AddingNumbers" searchProperties="true"><con:settings/><con:testStep type="request" name="RequestAdd"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>Selenium TestingBinding</con:interface><con:operation>AddIntegers</con:operation><con:request name="RequestAdd"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://vlay.pythonanywhere.com/ajax_release/default/call/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="https://vlay.pythonanywhere.com/ajax_release/default/call/soap">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:AddIntegers>
+         <!--You may enter the following 2 items in any order-->
+         <soap:a>${#Project#Addint1}</soap:a>
+         <soap:b>${#Project#Addint2}</soap:b>
+      </soap:AddIntegers>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>${#Project#expectedIntAdd}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="AddingStrings" searchProperties="true"><con:settings/><con:testStep type="request" name="requestAddStrings"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>Selenium TestingBinding</con:interface><con:operation>AddStrings</con:operation><con:request name="requestAddStrings"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://vlay.pythonanywhere.com/ajax_release/default/call/soap</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="https://vlay.pythonanywhere.com/ajax_release/default/call/soap">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soap:AddStrings>
+         <!--You may enter the following 2 items in any order-->
+         <soap:a>${#Project#AddStr1}</soap:a>
+         <soap:b>${#Project#AddStr2}</soap:b>
+      </soap:AddStrings>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response"/><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>${#Project#expectedAddStr}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>AddInt1</con:name><con:value>5</con:value></con:property><con:property><con:name>AddInt2</con:name><con:value>5</con:value></con:property><con:property><con:name>expectedIntAdd</con:name><con:value>10</con:value></con:property><con:property><con:name>AddStr1</con:name><con:value>text</con:value></con:property><con:property><con:name>AddStr2</con:name><con:value>45</con:value></con:property><con:property><con:name>expectedAddStr</con:name><con:value>text45</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
